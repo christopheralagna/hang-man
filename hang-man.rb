@@ -138,15 +138,6 @@ class Game
 
 end
 
-class Player
-  attr_accessor :incorrect_letters
-
-  def initialize()
-    @incorrect_letters = []
-  end
-
-end
-
 def get_random_word()
   dictionary = File.open("dictionary.txt", 'r').readlines
   return dictionary[rand(dictionary.length)].strip
